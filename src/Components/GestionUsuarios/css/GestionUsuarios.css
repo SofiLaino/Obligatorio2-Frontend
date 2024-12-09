@@ -1,0 +1,126 @@
+/* GestionUsuarios.css */
+
+/* Contenedor principal */
+.GestionUsuariosContainer {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #D9B8C4;
+}
+
+/* Encabezado */
+.GestionUsuariosHeader {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #922941;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Filtros */
+.GestionUsuariosLabel {
+  display: block;
+  font-weight: bold;
+  color: #922941;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.GestionUsuariosSelect {
+  padding: 12px;
+  border: 1px solid #A8A8A8;
+  border-radius: 6px;
+  background-color: #FDF6F0;
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.GestionUsuariosSelect:focus {
+  border-color: #922941;
+  outline: none;
+  box-shadow: 0 0 5px rgba(146, 41, 65, 0.3);
+}
+
+/* Tabla */
+.GestionUsuariosTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.GestionUsuariosTable th,
+.GestionUsuariosTable td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #D9B8C4;
+}
+
+.GestionUsuariosTable th {
+  background-color: #922941;
+  color: #FDF6F0;
+  text-transform: uppercase;
+}
+
+.GestionUsuariosTable td {
+  color: #555;
+}
+
+.GestionUsuariosTable tr:nth-child(even) {
+  background-color: #FDF6F0;
+}
+
+.GestionUsuariosTable tr:hover {
+  background-color: #F4D6DE;
+}
+
+/* Botón de volver */
+.GestionUsuariosButton {
+  padding: 12px 20px;
+  background-color: #922941;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.GestionUsuariosButton:hover {
+  background-color: #D9B8C4;
+  color: #2E2E2E;
+  transform: scale(1.05);
+}
+
+.GestionUsuariosButton:active {
+  transform: scale(1);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .GestionUsuariosContainer {
+    padding: 20px;
+  }
+
+  .GestionUsuariosHeader {
+    font-size: 24px;
+  }
+
+  .GestionUsuariosTable th,
+  .GestionUsuariosTable td {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .GestionUsuariosSelect {
+    font-size: 14px;
+  }
+}

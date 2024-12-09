@@ -1,0 +1,159 @@
+/* Contenedor principal */
+.explorar-premium {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #FFFFFF; /* Fondo blanco */
+  border: 2px solid #D9B8C4; /* Borde rosa viejo */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+  font-family: 'Lato', sans-serif;
+  color: #2E2E2E; /* Texto gris oscuro */
+}
+
+/* Encabezado */
+.explorar-premium h1 {
+  font-family: 'Playfair Display', serif;
+  color: #922941; /* Bordó oscuro */
+  font-size: 2.8em;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Subtítulo */
+.explorar-premium h2 {
+  font-size: 2em;
+  color: #2E2E2E; /* Gris oscuro */
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 600; /* Subtítulo destacado */
+}
+
+/* Párrafo */
+.explorar-premium p {
+  font-size: 1.2em;
+  margin: 20px 0;
+  color: #555; /* Gris suave */
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* Botón general */
+.explorar-premium button {
+  background-color: #922941; /* Bordó oscuro */
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.explorar-premium button:hover {
+  background-color: #D9B8C4; /* Rosa viejo */
+  color: #2E2E2E;
+  transform: scale(1.05);
+}
+
+/* Botón Volver */
+.volver {
+  background-color: #D9B8C4;
+  color: #2E2E2E;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 10px 0 20px;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.volver:hover {
+  background-color: #922941;
+  color: #FFFFFF;
+  transform: scale(1.05);
+}
+
+/* Formulario de pago */
+.payment-form {
+  margin-top: 30px;
+}
+
+/* Título del formulario */
+.payment-form h3 {
+  font-size: 1.8em;
+  color: #922941;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Contenedor de filas */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* Campos del formulario */
+.form-field {
+  flex: 1 1 48%; /* Dos campos por fila */
+  margin-bottom: 20px;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #D9B8C4;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  outline: none;
+  border-color: #922941;
+  box-shadow: 0 0 6px rgba(146, 41, 65, 0.3);
+}
+
+/* Botón Confirmar Pago */
+.payment-form .confirm-button {
+  background-color: #922941;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-size: 1.2em;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto; /* Centramos el botón */
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.payment-form .confirm-button:hover {
+  background-color: #D9B8C4;
+  color: #2E2E2E;
+  transform: scale(1.05);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-field {
+    flex: 1 1 100%;
+  }
+
+  .payment-form .confirm-button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}

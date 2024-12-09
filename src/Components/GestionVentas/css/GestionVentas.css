@@ -1,0 +1,81 @@
+.gestion-ventas-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fdf6f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #922941;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-family: 'Lato', sans-serif;
+  color: #2e2e2e;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #d9b8c4;
+  border-radius: 5px;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  color: #2e2e2e;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  color: #922941;
+  margin-top: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  font-family: 'Lato', sans-serif;
+  color: #2e2e2e;
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;
+  color: #922941;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Espaciado entre los botones */
+  margin-top: 20px;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #922941;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d9b8c4;
+  color: #2e2e2e;
+}

@@ -1,0 +1,53 @@
+.premium-benefits-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fdf6f0;
+    border: 1px solid #d9b8c4;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    color: #2e2e2e;
+  }
+  
+  .premium-benefits-container h1 {
+    font-family: "Playfair Display", serif;
+    color: #922941;
+    margin-bottom: 20px;
+  }
+  
+  .benefits-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .benefits-list li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #d9b8c4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .volver-button {
+    padding: 12px 20px;
+    background-color: #922941;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .volver-button:hover {
+    background-color: #d9b8c4;
+    color: #2e2e2e;
+    transform: scale(1.05);
+  }
+  

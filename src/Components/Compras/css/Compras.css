@@ -1,0 +1,153 @@
+/* Contenedor principal */
+.MisComprasContainer {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 2px solid #D9B8C4;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  /* Encabezado */
+  .MisComprasHeader {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #922941;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  /* Tarjetas de compras */
+  .CompraCard {
+    background-color: #FDF6F0;
+    border: 2px solid #C29EAF; /* Aumentar contraste */
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .CompraCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Encabezado de cada compra */
+  .CompraCardHeader {
+    font-size: 24px;
+    font-weight: bold;
+    color: #922941;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #D9B8C4;
+    padding-bottom: 10px;
+  }
+  
+  /* Lista de videojuegos */
+  .CompraVideojuegos {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .CompraVideojuegos li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #D9B8C4;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .CompraVideojuegos li:hover {
+    background-color: #F4D6DE;
+  }
+  
+  .CompraVideojuegos li p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  .CompraVideojuegos li p strong {
+    color: #922941;
+  }
+  
+  /* Totales */
+  .CompraTotal {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+    color: #922941;
+  }
+  
+  /* Botón Volver */
+  .MisComprasButton {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #922941;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-top: 30px; /* Margen superior para separación */
+    transition: background-color 0.3s ease, transform 0.2s;
+    text-align: center;
+  }
+  
+  .MisComprasButton:hover {
+    background-color: #D9B8C4;
+    color: #2E2E2E;
+    transform: scale(1.05);
+  }
+  
+  .MisComprasButton:active {
+    transform: scale(1);
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .MisComprasContainer {
+      padding: 15px;
+    }
+  
+    .MisComprasHeader {
+      font-size: 24px;
+    }
+  
+    .CompraCard {
+      padding: 15px;
+    }
+  
+    .CompraCardHeader {
+      font-size: 20px;
+    }
+  
+    .CompraVideojuegos li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .CompraVideojuegos li p {
+      font-size: 14px;
+    }
+  
+    .CompraTotal {
+      font-size: 14px;
+    }
+  
+    .MisComprasButton {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  } 
