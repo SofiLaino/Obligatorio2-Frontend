@@ -16,6 +16,8 @@ import BeneficiosPremium from "../BeneficiosPremium/BeneficiosPremium";
 import Carrito from "../Carrito/Carrito";
 import VentasPorFecha from '../GestionVentas/VentasPorFecha';
 import VentasPorUsuario from '../GestionVentas/VentasPorUsuario';
+import Compras from '../Compras/Compras';
+
 
 
 const App = () => {
@@ -38,6 +40,8 @@ const App = () => {
                     <Route path="/user/membresia" element={<Membresia />} />
                     <Route path="/user/beneficios" element={<BeneficiosPremium />} />
                     <Route path="/user/carrito" element={<Carrito />} />
+                    <Route path="/user/compras" element={<Compras />} />
+
                 </Routes>
         </Router>
     );

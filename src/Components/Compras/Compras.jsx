@@ -13,20 +13,17 @@ const Compras = () => {
   useEffect(() => {
     const fetchVentas = async () => {
       try {
-        // Llamada a la API para obtener las ventas del usuario
-        const response = await axios.get(
-          `http://localhost:5008/ventas/usuarios/${userId}/ventas`
-        );
+        const response = await axios.get(`http://localhost:5008/ventas/usuarios/${userId}/ventas`);
         setVentas(response.data); // Almacenar las ventas en el estado
-        setError(null); // Limpiar errores previos si la llamada es exitosa
+        setError(null);
       } catch (err) {
+        console.error("Error al cargar las compras:", err);
         setError("Error al cargar las compras.");
-        console.error(err);
       } finally {
-        setLoading(false); // Detener el estado de carga
+        setLoading(false);
       }
     };
-
+  
     fetchVentas();
   }, [userId]);
 
