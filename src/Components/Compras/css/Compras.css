@@ -1,153 +1,128 @@
 /* Contenedor principal */
 .MisComprasContainer {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #FFFFFF;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    border: 2px solid #D9B8C4;
-    font-family: 'Lato', sans-serif;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1E1E1E; /* Fondo blanco */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  border: 2px solid #00FFFF; /* Borde rosa pastel */
+  font-family: 'Exo 2', sans-serif; /* Fuente moderna */
+}
+
+/* Encabezado principal */
+.MisComprasHeader {
+  font-family: 'Exo 2', serif; /* Fuente elegante */
+  color: #FF004D; /* Bordó */
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+/* Grid para las compras */
+.CompraGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajustable para varios tamaños */
+  gap: 20px;
+}
+
+/* Tarjetas de videojuegos */
+.VideojuegoCard {
+  background-color: #0B0B0D; /* Fondo suave */
+  border: 1px solid #00FFFF; /* Borde rosa pastel */
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.VideojuegoCard:hover {
+  transform: translateY(-5px); /* Efecto de levitación */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+}
+
+/* Contenedor de imágenes */
+.VideojuegoImageContainer {
+  width: 100%;
+  height: 150px; /* Altura fija para todas las imágenes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.VideojuegoImage {
+  width: auto;
+  height: 100%;
+}
+
+
+.VideojuegoImage {
+  width: 100%; /* Ajustar al ancho del contenedor */
+  height: auto; /* Mantener proporciones */
+  border-radius: 8px; /* Bordes redondeados */
+  object-fit: cover; /* Cubrir el contenedor sin deformarse */
+}
+
+
+/* Información del videojuego */
+.VideojuegoInfo p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #F5F5F5; /* Gris oscuro */
+}
+
+.VideojuegoInfo p strong {
+  color: #FF004D; /* Bordó */
+}
+
+/* Botón Volver */
+.MisComprasButton {
+  display: block;
+  padding: 15px 30px;
+  background-color: #FF004D; /* Bordó */
+  color: #1E1E1E; /* Texto blanco */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  margin: 30px auto 0;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.MisComprasButton:hover {
+  background-color: #00FFFF; /* Rosa pastel */
+  color: #1E1E1E; /* Gris oscuro */
+  transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+.MisComprasButton:active {
+  transform: scale(1);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .MisComprasContainer {
+    padding: 15px;
   }
-  
-  /* Encabezado */
+
   .MisComprasHeader {
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    color: #922941;
-    margin-bottom: 30px;
-    text-transform: uppercase;
+    font-size: 28px;
   }
-  
-  /* Tarjetas de compras */
-  .CompraCard {
-    background-color: #FDF6F0;
-    border: 2px solid #C29EAF; /* Aumentar contraste */
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
+
+  .VideojuegoCard {
+    padding: 10px;
   }
-  
-  .CompraCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+  .VideojuegoInfo p {
+    font-size: 14px;
   }
-  
-  /* Encabezado de cada compra */
-  .CompraCardHeader {
-    font-size: 24px;
-    font-weight: bold;
-    color: #922941;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #D9B8C4;
-    padding-bottom: 10px;
-  }
-  
-  /* Lista de videojuegos */
-  .CompraVideojuegos {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-  }
-  
-  .CompraVideojuegos li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px;
-    margin-bottom: 10px;
-    background-color: #FFFFFF;
-    border: 1px solid #D9B8C4;
-    border-radius: 8px;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .CompraVideojuegos li:hover {
-    background-color: #F4D6DE;
-  }
-  
-  .CompraVideojuegos li p {
-    margin: 0;
-    font-size: 16px;
-    color: #333;
-    line-height: 1.5;
-  }
-  
-  .CompraVideojuegos li p strong {
-    color: #922941;
-  }
-  
-  /* Totales */
-  .CompraTotal {
-    font-size: 18px;
-    font-weight: bold;
-    text-align: right;
-    margin-top: 20px;
-    color: #922941;
-  }
-  
-  /* Botón Volver */
+
   .MisComprasButton {
-    display: inline-block;
     padding: 12px 25px;
-    background-color: #922941;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    margin-top: 30px; /* Margen superior para separación */
-    transition: background-color 0.3s ease, transform 0.2s;
-    text-align: center;
   }
-  
-  .MisComprasButton:hover {
-    background-color: #D9B8C4;
-    color: #2E2E2E;
-    transform: scale(1.05);
-  }
-  
-  .MisComprasButton:active {
-    transform: scale(1);
-  }
-  
-  /* Responsividad */
-  @media (max-width: 768px) {
-    .MisComprasContainer {
-      padding: 15px;
-    }
-  
-    .MisComprasHeader {
-      font-size: 24px;
-    }
-  
-    .CompraCard {
-      padding: 15px;
-    }
-  
-    .CompraCardHeader {
-      font-size: 20px;
-    }
-  
-    .CompraVideojuegos li {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .CompraVideojuegos li p {
-      font-size: 14px;
-    }
-  
-    .CompraTotal {
-      font-size: 14px;
-    }
-  
-    .MisComprasButton {
-      padding: 10px 20px;
-      font-size: 14px;
-    }
-  } 
+}

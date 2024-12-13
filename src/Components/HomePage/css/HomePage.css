@@ -3,14 +3,14 @@
 /* Contenedor principal */
 .homepage {
     padding: 20px;
-    background-color: #FDF6F0; /* Blanco hueso */
-    color: #2E2E2E; /* Negro profundo */
-    font-family: 'Lato', sans-serif; /* Fuente moderna */
+    background-color: #0B0B0D; /* Blanco hueso */
+    color: #1E1E1E; /* Negro profundo */
+    font-family: 'Exo 2', sans-serif; /* Fuente moderna */
 }
 
 .homepage h1 {
-    font-family: 'Playfair Display', serif; /* Fuente elegante */
-    color: #922941; /* Bordó oscuro */
+    font-family: 'Exo 2', serif; /* Fuente elegante */
+    color: #FF004D; /* Bordó oscuro */
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
@@ -25,8 +25,8 @@
 }
 
 .card {
-    background-color: white;
-    border: 1px solid #D9B8C4; /* Rosa viejo */
+    background-color: #1E1E1E;
+    border: 1px solid #00FFFF; /* Rosa viejo */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.3s;
@@ -42,20 +42,20 @@
 .card-content h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #922941; /* Bordó oscuro */
-    font-family: 'Playfair Display', serif; /* Fuente elegante */
+    color: #FF004D; /* Bordó oscuro */
+    font-family: 'Exo 2', serif; /* Fuente elegante */
 }
 
 .card-content p {
     margin: 5px 0;
-    color: #555; /* Gris suave */
+    color: #1E1E1E; /* Gris suave */
     font-size: 1em;
 }
 
 /* Botón en las tarjetas */
 .card-content button {
-    background-color: #922941; /* Bordó oscuro */
-    color: #FDF6F0; /* Blanco hueso */
+    background-color: #FF004D; /* Bordó oscuro */
+    color: #0B0B0D; /* Blanco hueso */
     border: none;
     border-radius: 5px;
     padding: 10px 15px;
@@ -65,7 +65,7 @@
 }
 
 .card-content button:hover {
-    background-color: #D9B8C4; /* Rosa viejo */
-    color: #2E2E2E; /* Negro profundo */
+    background-color: #00FFFF; /* Rosa viejo */
+    color: #1E1E1E; /* Negro profundo */
     transform: scale(1.05);
 }

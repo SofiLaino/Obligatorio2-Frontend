@@ -5,17 +5,17 @@
   max-width: 800px;
   margin: 40px auto;
   padding: 30px;
-  background-color: #FFFFFF;
+  background-color: #1E1E1E;
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  border: 1px solid #D9B8C4;
+  border: 1px solid #00FFFF;
 }
 
 /* Encabezado */
 .GestionUsuariosHeader {
   text-align: center;
-  font-family: 'Playfair Display', serif;
-  color: #922941;
+  font-family: 'Exo 2', serif;
+  color: #FF004D;
   font-size: 28px;
   margin-bottom: 30px;
 }
@@ -24,7 +24,7 @@
 .GestionUsuariosLabel {
   display: block;
   font-weight: bold;
-  color: #922941;
+  color: #FF004D;
   margin-bottom: 10px;
   font-size: 16px;
 }
@@ -33,9 +33,9 @@
   padding: 12px;
   border: 1px solid #A8A8A8;
   border-radius: 6px;
-  background-color: #FDF6F0;
-  font-family: 'Lato', sans-serif;
-  color: #333;
+  background-color: #0B0B0D;
+  font-family: 'Exo 2', sans-serif;
+  color: #F5F5F5;
   width: 100%;
   font-size: 16px;
   margin-bottom: 20px;
@@ -43,7 +43,7 @@
 }
 
 .GestionUsuariosSelect:focus {
-  border-color: #922941;
+  border-color: #FF004D;
   outline: none;
   box-shadow: 0 0 5px rgba(146, 41, 65, 0.3);
 }
@@ -59,21 +59,21 @@
 .GestionUsuariosTable td {
   padding: 14px;
   text-align: left;
-  border-bottom: 1px solid #D9B8C4;
+  border-bottom: 1px solid #00FFFF;
 }
 
 .GestionUsuariosTable th {
-  background-color: #922941;
-  color: #FDF6F0;
+  background-color: #FF004D;
+  color: #0B0B0D;
   text-transform: uppercase;
 }
 
 .GestionUsuariosTable td {
-  color: #555;
+  color: #1E1E1E;
 }
 
 .GestionUsuariosTable tr:nth-child(even) {
-  background-color: #FDF6F0;
+  background-color: #0B0B0D;
 }
 
 .GestionUsuariosTable tr:hover {
@@ -83,20 +83,20 @@
 /* Botón de volver */
 .GestionUsuariosButton {
   padding: 12px 20px;
-  background-color: #922941;
-  color: #FFFFFF;
+  background-color: #FF004D;
+  color: #1E1E1E;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   margin-bottom: 20px;
   transition: background-color 0.3s ease, transform 0.2s;
 }
 
 .GestionUsuariosButton:hover {
-  background-color: #D9B8C4;
-  color: #2E2E2E;
+  background-color: #00FFFF;
+  color: #1E1E1E;
   transform: scale(1.05);
 }
 

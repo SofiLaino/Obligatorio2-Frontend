@@ -2,18 +2,18 @@
     max-width: 800px;
     margin: 50px auto;
     padding: 30px;
-    background-color: #fdf6f0;
-    border: 1px solid #d9b8c4;
+    background-color: #0B0B0D;
+    border: 1px solid #00FFFF;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-family: "Lato", sans-serif;
-    color: #2e2e2e;
+    font-family: "'Exo 2'", sans-serif;
+    color: #1E1E1E;
   }
   
   .premium-benefits-container h1 {
-    font-family: "Playfair Display", serif;
-    color: #922941;
+    font-family: 'Roboto', serif;
+    color: #FF004D;
     margin-bottom: 20px;
   }
   
@@ -30,14 +30,14 @@
     padding: 10px;
     background-color: #ffffff;
     border-radius: 8px;
-    border: 1px solid #d9b8c4;
+    border: 1px solid #00FFFF;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   }
   
   .volver-button {
     padding: 12px 20px;
-    background-color: #922941;
-    color: #ffffff;
+    background-color: #FF004D;
+    color: #1E1E1E;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -46,8 +46,8 @@
   }
   
   .volver-button:hover {
-    background-color: #d9b8c4;
-    color: #2e2e2e;
+    background-color: #00FFFF;
+    color: #1E1E1E;
     transform: scale(1.05);
   }
   

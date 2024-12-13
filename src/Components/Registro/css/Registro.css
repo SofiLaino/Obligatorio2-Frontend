@@ -4,16 +4,16 @@
     max-width: 400px;
     margin: 50px auto;
     padding: 30px;
-    border: 1px solid #D9B8C4; /* Rosa viejo */
+    border: 1px solid #00FFFF; /* Rosa viejo */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: white;
+    background-color: #1E1E1E;
     text-align: center;
 }
 
 .auth-form h2 {
-    font-family: 'Playfair Display', serif; /* Fuente elegante */
-    color: #922941; /* Bordó oscuro */
+    font-family: 'Exo 2', serif; /* Fuente elegante */
+    color: #FF004D; /* Bordó oscuro */
     font-size: 1.8em;
     margin-bottom: 20px;
 }
@@ -27,7 +27,7 @@
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
-    color: #922941; /* Bordó oscuro */
+    color: #FF004D; /* Bordó oscuro */
 }
 
 .auth-form input {
@@ -39,19 +39,19 @@
     border: 1px solid #A8A8A8; /* Gris suave */
     border-radius: 5px;
     box-sizing: border-box;
-    background-color: #FDF6F0; /* Blanco hueso */
+    background-color: #0B0B0D; /* Blanco hueso */
 }
 
 .auth-form input:focus {
-    border-color: #922941; /* Bordó oscuro */
+    border-color: #FF004D; /* Bordó oscuro */
     outline: none;
 }
 
 .auth-form button {
     width: 100%;
     padding: 12px;
-    background-color: #922941; /* Bordó oscuro */
-    color: #FDF6F0; /* Blanco hueso */
+    background-color: #FF004D; /* Bordó oscuro */
+    color: #0B0B0D; /* Blanco hueso */
     font-size: 1em;
     border: none;
     border-radius: 5px;
@@ -61,21 +61,21 @@
 }
 
 .auth-form button:hover {
-    background-color: #D9B8C4; /* Rosa viejo */
-    color: #2E2E2E; /* Negro profundo */
+    background-color: #00FFFF; /* Rosa viejo */
+    color: #1E1E1E; /* Negro profundo */
 }
 
 .auth-form .toggle-button {
     margin-top: 15px;
     text-align: center;
-    color: #922941; /* Bordó oscuro */
+    color: #FF004D; /* Bordó oscuro */
     cursor: pointer;
     font-size: 0.9em;
     text-decoration: underline;
 }
 
 .auth-form .toggle-button:hover {
-    color: #D9B8C4; /* Rosa viejo */
+    color: #00FFFF; /* Rosa viejo */
     text-decoration: none;
 }
 

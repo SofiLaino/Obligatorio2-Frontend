@@ -1,8 +1,8 @@
 /* Contenedor principal */
 .gestion-videojuegos {
   padding: 10px;
-  color: #333; /* Texto gris oscuro */
-  font-family: 'Lato', sans-serif;
+  color: #F5F5F5; /* Texto gris oscuro */
+  font-family: 'Exo 2', sans-serif;
   max-width: 1000px;
   margin: 30px auto; /* Centrado */
   border-radius: 10px;
@@ -12,7 +12,7 @@
 .volver {
   margin-bottom: 20px;
   padding: 12px 20px;
-  background-color: #922941;
+  background-color: #FF004D;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -23,13 +23,13 @@
 
 .volver:hover {
   background-color: #d97f97; /* Rosa suave */
-  color: #2e2e2e;
+  color: #1E1E1E;
 }
 
 /* Título */
 h1 {
-  font-family: 'Playfair Display', serif;
-  color: #922941; /* Bordó oscuro */
+  font-family: 'Exo 2', serif;
+  color: #FF004D; /* Bordó oscuro */
   text-align: center;
   margin-bottom: 30px;
   font-size: 28px;
@@ -58,7 +58,7 @@ label {
   flex-direction: column;
   flex: 1; /* Ajuste automático */
   font-size: 14px;
-  color: #555; /* Texto gris medio */
+  color: #1E1E1E; /* Texto gris medio */
 }
 
 input, textarea, select {
@@ -76,7 +76,7 @@ textarea {
 }
 
 input:focus, textarea:focus, select:focus {
-  border-color: #922941;
+  border-color: #FF004D;
   outline: none;
   box-shadow: 0 0 5px rgba(146, 41, 65, 0.5);
 }
@@ -93,7 +93,7 @@ button {
   font-size: 16px;
   border: none;
   border-radius: 5px;
-  background-color: #922941;
+  background-color: #FF004D;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s;
@@ -125,7 +125,7 @@ th, td {
 }
 
 th {
-  background-color: #922941;
+  background-color: #FF004D;
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
@@ -133,7 +133,7 @@ th {
 
 td {
   font-size: 14px;
-  color: #555;
+  color: #1E1E1E;
 }
 
 tr:nth-child(even) {
@@ -152,7 +152,7 @@ tr:hover {
 .table-actions button {
   font-size: 14px;
   padding: 8px 12px;
-  background-color: #922941;
+  background-color: #FF004D;
   color: #fff;
   border: none;
   border-radius: 4px;

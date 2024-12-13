@@ -1,62 +1,179 @@
+/* Contenedor principal */
 .carrito {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fdf6f0;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-family: "Lato", sans-serif;
-    text-align: center;
-  }
-  
-  .carrito h1 {
-    font-size: 2em;
-    color: #922941;
-    margin-bottom: 20px;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
+  padding: 30px;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #1E1E1E; /* Fondo blanco */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+  font-family: "'Exo 2'", sans-serif;
+}
+
+/* Título principal */
+.carrito h1 {
+  font-size: 2.5em;
+  color: #FF004D; /* Bordó */
+  margin-bottom: 25px;
+  font-family: 'Roboto', serif;
+  text-align: center;
+}
+
+/* Lista de artículos */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #00FFFF; /* Rosa pastel */
+  border-radius: 10px;
+  background-color: #0B0B0D; /* Fondo suave */
+  transition: all 0.3s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-details p {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #F5F5F5;
+}
+
+.cart-item-details p strong {
+  color: #FF004D;
+}
+
+/* Botones */
+.remove-button,
+.checkout-button,
+.back-button {
+  background-color: #FF004D; /* Bordó */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.remove-button:hover,
+.checkout-button:hover,
+.back-button:hover {
+  background-color: #00FFFF; /* Rosa pastel */
+  color: #1E1E1E;
+  transform: scale(1.05);
+}
+
+/* Contenedor de botones */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+/* Totales */
+h2 {
+  margin-top: 20px;
+  font-size: 1.8em;
+  color: #1E1E1E; /* Gris oscuro */
+  text-align: right;
+}
+
+/* Formulario de pago */
+.payment-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #0B0B0D;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form h3 {
+  font-size: 1.8em;
+  color: #FF004D;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Filas del formulario */
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.form-row input,
+.form-row select {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #00FFFF;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.form-row input:focus,
+.form-row select:focus {
+  outline: none;
+  border-color: #FF004D;
+  box-shadow: 0 0 5px rgba(146, 41, 65, 0.3);
+}
+
+/* Botón de confirmar pago */
+.payment-form button {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #FF004D;
+  color: #1E1E1E;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.payment-form button:hover {
+  background-color: #00FFFF;
+  color: #1E1E1E;
+  transform: scale(1.05);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
   .cart-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #d9b8c4;
-    border-radius: 8px;
-    background-color: white;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  .cart-item-details {
-    text-align: left;
+
+  .button-container {
+    flex-direction: column;
   }
-  
-  .remove-button,
-  .checkout-button,
-  .back-button {
-    background-color: #922941;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+
+  .payment-form {
+    padding: 15px;
   }
-  
-  .remove-button:hover,
-  .checkout-button:hover,
-  .back-button:hover {
-    background-color: #d9b8c4;
-    color: #2e2e2e;
-  }
-  
-  h2 {
-    margin-top: 20px;
+
+  .payment-form h3 {
     font-size: 1.5em;
-    color: #2e2e2e;
   }
-  
+
+  .payment-form button {
+    font-size: 1em;
+  }
+}

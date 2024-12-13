@@ -149,9 +149,6 @@ const Membresia = () => {
 
   return (
     <div className="explorar-premium">
-      <button className="volver" onClick={() => navigate(-1)}>
-        Volver
-      </button>
       <h1>Explorar Premium</h1>
       {usuario && (
         <div>
@@ -166,19 +163,25 @@ const Membresia = () => {
           ) : (
             <>
               <p>
-                Obtén acceso exclusivo a contenido Premium. 
+                Obtén acceso exclusivo a contenido Premium.
                 ¿Estás listo para desbloquear todos los beneficios por USD 10 al mes?
               </p>
-              {!showPaymentForm ? (
-                <button onClick={() => setShowPaymentForm(true)}>Hazte Premium</button>
-              ) : (
+              <div className="button-container">
+                <button className="volver" onClick={() => navigate(-1)}>
+                  Volver
+                </button>
+                {!showPaymentForm && (
+                  <button onClick={() => setShowPaymentForm(true)}>Hazte Premium</button>
+                )}
+              </div>
+              {showPaymentForm && (
                 <form onSubmit={handlePayment} className="payment-form">
                   <h3>Detalles de Pago</h3>
                   <select onChange={handleSelectCard}>
                     <option value="">Seleccionar tarjeta guardada</option>
-                      <option key={savedCard.id} value={savedCard.id}>
-                        {savedCard.tipo} - {savedCard.numero.slice(-4)}
-                      </option>
+                    <option key={savedCard.id} value={savedCard.id}>
+                      {savedCard.tipo} - {savedCard.numero.slice(-4)}
+                    </option>
                   </select>
                   <input
                     type="text"
